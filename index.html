@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesan Rahasia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e0, #ffe8f0);
+            text-align: center;
+            padding: 50px;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff7aa2;
+            color: white;
+            cursor: pointer;
+        }
+        #hasil {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>kamu siapa yahh??</h2>
+        <input type="text" id="nama" placeholder="masukin nama kamu...">
+        <br><br>
+        <button onclick="cekNama()">Kirim</button>
+        <div id="hasil"></div>
+    </div>
+
+    <script>
+        function cekNama() {
+            let nama = document.getElementById("nama").value.toLowerCase();
+            let hasil = "";
+
+            if (nama === "fahryan") {
+                hasil = "halo ketuaa kelass :)";
+            } else if (nama === "haidar") {
+                hasil = "wong jomok cikk :)";
+            } else if (nama === "roesyid") {
+                hasil = "info ijo lurr :)";
+            } else if (nama === "depa" || nama === "deva") {
+                hasil = "Game porno cik :)";
+            } else if (nama === "fikri") {
+                hasil = "hitam kamu fik :)";
+            } else if (nama === "davi") {
+                hasil = "mesti gay :)";
+            } else if (nama === "rakha") {
+                hasil = "haii gantenggg :)";
+            } else if (nama === "dhev" || nama === "dhevarel") {
+                hasil = "oppa aku kangenn :((";
+            } else if (nama === "arya") {
+                hasil = "Lapo golek jenengku :))";
+            } else {
+                hasil = "lah koe sopo mas??";
+            }
+
+            document.getElementById("hasil").innerText = hasil;
+        }
+    </script>
+
+</body>
+</html>
